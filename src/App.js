@@ -9,12 +9,12 @@ import UniversalProductPage from './Pages/OneCategory/OneCategoryPage';
 import SingleProductPage from './Pages/Product/SingleProductPage';
 import Error from './Pages/404_page/404_page';
 
-export const BASE_URL = 'http://localhost:3000/'
+export const BASE_URL = 'http://localhost:3333/'
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter> 
       <Header/>
         <Routes>
           <Route path='/' element={<HomePage/>}></Route>

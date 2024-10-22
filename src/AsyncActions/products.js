@@ -5,7 +5,7 @@ import { allProductsAction, allProductsSaleAction, productsByCategoryAction} fro
 
 export function fetchAllProducts(){
     return function(dispatch){
-        fetch(BASE_URL+'products/all')
+        fetch('http://localhost:3333/products/all')
             .then(res => res.json())
             .then(data => dispatch(allProductsAction(data)))
     }
