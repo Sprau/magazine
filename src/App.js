@@ -9,7 +9,7 @@ import UniversalProductPage from './Pages/OneCategory/OneCategoryPage';
 import SingleProductPage from './Pages/Product/SingleProductPage';
 import Error from './Pages/404_page/404_page';
 
-export const BASE_URL = 'http://localhost:3333/'
+export const BASE_URL = 'https://backend-garden.onrender.com/'
 
 function App() {
   return (

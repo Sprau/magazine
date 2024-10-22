@@ -4,7 +4,7 @@ import { getProductAction } from "../Store/newred";
  
 export function fetchCategoriesList(){
   return function(dispatch) {
-    fetch(`http://localhost:3333/categories/all`)
+    fetch(`https://backend-garden.onrender.com/categories/all`)
       .then(res => res.json())
       .then(data => dispatch(getAllCategoriesAction(data)));
       console.log(dispatch)

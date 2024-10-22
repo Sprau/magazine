@@ -5,7 +5,7 @@ import { allProductsAction, allProductsSaleAction, productsByCategoryAction} fro
 
 export function fetchAllProducts(){
     return function(dispatch){
-        fetch('http://localhost:3333/products/all')
+        fetch('https://backend-garden.onrender.com/products/all')
             .then(res => res.json())
             .then(data => dispatch(allProductsAction(data)))
     }
